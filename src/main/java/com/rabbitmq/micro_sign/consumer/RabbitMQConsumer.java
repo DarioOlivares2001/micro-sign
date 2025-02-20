@@ -62,7 +62,7 @@ public class RabbitMQConsumer {
             ResponseEntity<String> response = restTemplate.postForEntity(ALERT_SERVICE_URL, request, String.class);
             log.info("Alerta enviada con éxito: {}", response.getBody());
         } catch (Exception e) {
-            log.error("Error al enviar alerta: ", e);
+            log.error(" Error al enviar alerta: ", e);
         }
     }
 }
